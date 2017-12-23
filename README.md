@@ -4,4 +4,5 @@ This is a collection of dotfiles and scripts I use for customizing OS X to my li
 
 ## Features
 
-- Sensible [OS X defaults](setup-osx.sh)
+- Sensible [OS X defaults](setup-osx.sh) Based on https://github.com/nicksp/dotfiles/
+- 

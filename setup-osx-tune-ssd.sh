@@ -10,6 +10,7 @@ sudo -v
 sudo tmutil disablelocal
 
 # Turn off hibernation [laptops only]
+# More Info https://computers.tutsplus.com/tutorials/how-to-hibernate-a-mac--cms-23235
 sudo pmset -a hibernatemode 0
 sudo command rm /var/vm/sleepimage
 
