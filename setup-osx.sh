@@ -116,11 +116,11 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-# Set language and text formats. (USD and Imperial Units)
+# Set language and text formats. (EURO and Metric Units)
 defaults write -g AppleLanguages -array "de" "de"
 defaults write -g AppleLocale -string "de_DE@currency=EUR"
 defaults write -g AppleMeasurementUnits -string "Centimeter"
-defaults write -g AppleMetricUnits -bool false
+defaults write -g AppleMetricUnits -bool true
 
 ###############################################################################
 # Screen
@@ -239,7 +239,7 @@ defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-ty
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
            "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
            "Terminal" "Twitter" "iCal"; do
-           kill all "${app}" > /dev/null 2>&1
+           killall "${app}" > /dev/null 2>&1
 done
 
 # Wait a bit before moving on...
