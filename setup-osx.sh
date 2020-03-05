@@ -72,6 +72,10 @@ defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool
 # Disable inline attachments in Mail.app (just show the icons)
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
+# Enable custom header for GNU Terry Pratchett in Mail.app
+defaults write com.apple.mail UserHeaders '{"X-Clacks-Overhead" = "GNU Terry Pratchett";}'
+
+
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
